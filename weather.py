@@ -12,7 +12,7 @@ class Weather(DataExtracter, DataAnalyzer):
 
     def filter_data(self):
         """For filtering out the useable data from the table
-        Return type: list of tuples
+        rtype: list of tuples
         """
 
         for data_row in self.weather_data[2:]:

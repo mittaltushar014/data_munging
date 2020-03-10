@@ -17,13 +17,12 @@ class DataAnalyzer:
 
     def min_diff_return(self, data_useable):
         """For finding minimum difference
-        Return type: tuple
+        rtype: tuple
         """
 
         min_diff = abs(data_useable[0][1] - data_useable[0][2])
 
         for data_row in data_useable:
-
             if abs(float(data_row[2]) - float(data_row[1])) < min_diff:
                 min_diff = abs(float(data_row[2]) - float(data_row[1]))
                 self.data = data_row

@@ -12,7 +12,7 @@ class Football(DataExtracter, DataAnalyzer):
 
     def filter_data(self):
         """For filtering out the useable data from the table
-        Return type: list of tuples
+        rtype: list of tuples
         """
 
         for data_row in self.football_data[1:]:

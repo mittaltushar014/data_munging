@@ -10,10 +10,9 @@ class Weather(DataExtracter, DataAnalyzer):
         self.useable_data = list()
         self.day_and_temp = tuple()
 
-    def filter_data(self):
-        """For filtering out the useable data from the table
-        rtype: list of tuples
-        """
+
+    def smallest_temperatue_spread(self):
+        """For printing day and the smallest temperature spread"""
 
         for data_row in self.weather_data[2:]:
 
@@ -25,13 +24,7 @@ class Weather(DataExtracter, DataAnalyzer):
 
             self.useable_data.append((data_row[0], float(data_row[1]), float(data_row[2])))
 
-        return self.useable_data
-
-
-    def smallest_temperatue_spread(self):
-        """For printing day and the smallest temperature spread"""
-
-        self.day_and_temp = self.min_diff_return(self.filter_data())
+        self.day_and_temp = self.min_diff_return(self.useable_data)
         print("Day is {}, Max temp = {}, Min Temp = {}".format(self.day_and_temp[0], self.day_and_temp[1], self.day_and_temp[2]))
 
 weather_temp_spread = Weather()

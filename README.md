@@ -10,3 +10,18 @@ A program to output the day number (column one) with the smallest temperature sp
 #### Part Two: Soccer League Table
 A program to print the name of the team with the smallest difference in ‘for’ and ‘against’ goals.
 
+
+File structure:
+
+├── common.py   
+├── common.pyc  
+├── data    
+│   ├── football.dat    
+│   └── weather.dat 
+├── football.py 
+├── __pycache__ 
+│   └── common.cpython-36.pyc   
+├── README.md   
+├── requirements.txt    
+├── tree.txt    
+└── weather.py  

@@ -1,6 +1,6 @@
 from common import *
 
-class Football(DataExtracter, DataAnalyzer):
+class FootballAnalyzer(DataExtracter, DataAnalyzer):
     """For football operations"""
 
     def __init__(self):
@@ -21,5 +21,5 @@ class Football(DataExtracter, DataAnalyzer):
         self.team_and_goal_diff = self.min_diff_return(self.useable_data)
         print("Team is {}, Goals difference = {}".format(self.team_and_goal_diff[0], abs(self.team_and_goal_diff[1]-self.team_and_goal_diff[2]))) 
 
-min_goal_diff = Football()
+min_goal_diff = FootballAnalyzer()
 min_goal_diff.smallest_goal_difference()

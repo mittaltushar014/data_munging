@@ -1,6 +1,6 @@
 from common import *
 
-class Weather(DataExtracter, DataAnalyzer):
+class WeatherAnalyzer(DataExtracter, DataAnalyzer):
     """For weather operations"""
 
     def __init__(self):
@@ -27,5 +27,5 @@ class Weather(DataExtracter, DataAnalyzer):
         self.day_and_temp = self.min_diff_return(self.useable_data)
         print("Day is {}, Max temp = {}, Min Temp = {}".format(self.day_and_temp[0], self.day_and_temp[1], self.day_and_temp[2]))
 
-weather_temp_spread = Weather()
+weather_temp_spread = WeatherAnalyzer()
 weather_temp_spread.smallest_temperatue_spread()

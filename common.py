@@ -13,6 +13,7 @@ class DataAnalyzer:
     def __init__(self):
         """Initializing variables used in class"""
 
+        data_extract=DataExtracter()
         self.data = tuple()
 
     def min_diff_return(self, data_useable):
